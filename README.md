@@ -12,4 +12,4 @@ Advent of Code 2020 🎄 Python Solutions by `@DonaldLika` 😊
 
 ## Running Tests
 
-Each day contains its own set of tests. To run them type `python3 -m unittest *_test.py`.
+Each day contains some tests at the end of the index file. To run them type `python3 *.py`.
