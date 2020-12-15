@@ -15,13 +15,12 @@ class Row():
         self.letter = parsedLine[1][0]
         self.password = parsedLine[2]
 
-    def isValid(self)->bool:
+    def isValid(self)->bool:         
           return self.minLimit <= self.password.count(self.letter) <=self.maxLimit
    
     def isValidTobogganPassword(self)->bool:
-          return self.password[self.minLimit-1] == self.letter and self.password[self.maxLimit-1] != self.letter
-   
-
+         return (self.password[self.minLimit - 1], self.password[self.maxLimit - 1]).count(self.letter) == 1
+       
 def readPasswords(passwords):
      return [Row(p) for p in passwords]
 
