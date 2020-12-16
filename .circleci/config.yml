@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: 
-          command: python -m unittest day-1/*_test.py
+          command: python day-1/*.py
           name: Day 1
 
 workflows:
