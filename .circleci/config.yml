@@ -7,9 +7,9 @@ jobs:
     steps:
       - checkout
       - run: 
-          command: python day-1/*.py
-          name: Day 1
-
+          command: ./build.sh
+          name: Build
+          
 workflows:
   main:
     jobs:
